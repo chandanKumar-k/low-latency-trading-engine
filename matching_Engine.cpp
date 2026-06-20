@@ -123,7 +123,6 @@ public:
 };
 
 // MODULE 3: USER-INTERACTIVE INTERFACE
-// ==========================================
 int main() {
     cout << "====================================================" << endl;
     cout << "   PESU LOW-LATENCY TRADING ENGINE v3.0 - READY    " << endl;
