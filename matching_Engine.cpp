@@ -5,9 +5,8 @@
 
 using namespace std;
 
-// ==========================================
 // MODULE 1: THE INDIVIDUAL ORDER BLUEPRINT
-// ==========================================
+
 class Order {
 private:
     string orderId;
@@ -39,9 +38,7 @@ public:
     }
 };
 
-// ==========================================
 // CUSTOM SORTING COMPARATORS (The Speed Keys)
-// ==========================================
 // Buyers want the HIGHEST price first (Descending order)
 bool compareBuyOrders(const Order& a, const Order& b) {
     return a.getPrice() > b.getPrice();
@@ -52,9 +49,7 @@ bool compareSellOrders(const Order& a, const Order& b) {
     return a.getPrice() < b.getPrice();
 }
 
-// ==========================================
 // MODULE 2: THE OPTIMIZED ORDER BOOK
-// ==========================================
 class OrderBook {
 private:
     vector<Order> buyOrders;
@@ -127,7 +122,6 @@ public:
     }
 };
 
-// ==========================================
 // MODULE 3: USER-INTERACTIVE INTERFACE
 // ==========================================
 int main() {
