@@ -22,8 +22,7 @@ class TradingDashboard(ctk.CTk):
             text=True,
             bufsize=1
         )
-
-        # --- LEFT PANEL: CONTROLS ---
+        # LEFT PANEL: CONTROLS 
         self.control_frame = ctk.CTkFrame(self, width=260, corner_radius=10)
         self.control_frame.pack(side="left", fill="y", padx=15, pady=15)
 
@@ -45,7 +44,7 @@ class TradingDashboard(ctk.CTk):
         self.submit_btn = ctk.CTkButton(self.control_frame, text="Inject into C++ Core", command=self.send_order_to_cpp)
         self.submit_btn.pack(fill="x", padx=15, pady=15)
 
-        # --- RIGHT PANEL: LIVE DISPLAY PANELS ---
+        #  RIGHT PANEL: LIVE DISPLAY PANELS 
         self.right_frame = ctk.CTkFrame(self)
         self.right_frame.pack(side="right", fill="both", expand=True, padx=15, pady=15)
 
