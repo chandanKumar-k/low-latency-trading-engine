@@ -34,7 +34,7 @@ int main() {
     int orderCounter = 100;
 
     string command;
-    // This loop stays alive continuously, keeping your vectors saved in memory!
+    // This loop stays alive continuously, saved in memory!
     while (cin >> command) {
         if (command == "ADD") {
             string symbol, type;
@@ -76,7 +76,7 @@ int main() {
                     }
                 }
                 if (!currentMatched) i++;
-                else break; // Restart evaluation loop state
+                else break; 
             }
 
             if (!matchFound) {
